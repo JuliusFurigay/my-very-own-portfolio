@@ -87,24 +87,28 @@ window.addEventListener('scroll', scrollActive)
 // scrollreveal
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '300px',
+    distance: '400px',
     duration: '2000',
-    delay: 400,
 })
 
-sr.reveal('.homeSocial, .educationContainer, .contactsContainer')
+sr.reveal('.educationContainer, .contactsContainer, .header')
 sr.reveal('.footerContainer', {origin: 'bottom'})
-sr.reveal('.homeTitle span:nth-child(1)', {origin: 'right', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(2)', {origin: 'right', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(3)', {origin: 'right', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(4)', {origin: 'right', opacity: 1})
+sr.reveal('.homeTitle span:nth-child(1)', {origin: 'top', opacity: 1, delay: 100})
+sr.reveal('.homeTitle span:nth-child(2)', {origin: 'top', opacity: 1, delay: 200})
+sr.reveal('.homeTitle span:nth-child(3)', {origin: 'top', opacity: 1, delay: 300})
+sr.reveal('.homeTitle span:nth-child(4)', {origin: 'top', opacity: 1, delay: 400})
+sr.reveal('.homeTitle span:nth-child(5)', {origin: 'top', opacity: 1, delay: 500})
+sr.reveal('.homeTitle span:nth-child(10)', {origin: 'right', opacity: 1, delay: 2400.4})
 
-sr.reveal('.homeTitle span:nth-child(6)', {origin: 'left', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(7)', {origin: 'left', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(8)', {origin: 'left', opacity: 1})
-sr.reveal('.homeTitle span:nth-child(9)', {origin: 'left', opacity: 1})
+sr.reveal('.ri-account-box-fill', {origin: 'right', delay: 1100})
 
-sr.reveal('.aboutData, .projectContainer', {origin: 'left'})
+
+sr.reveal('.homeTitle span:nth-child(6)', {origin: 'top', opacity: 1, delay: 700})
+sr.reveal('.homeTitle span:nth-child(7)', {origin: 'top', opacity: 1, delay: 800})
+sr.reveal('.homeTitle span:nth-child(8)', {origin: 'top', opacity: 1, delay: 900})
+sr.reveal('.homeTitle span:nth-child(9)', {origin: 'top', opacity: 1, delay: 1000})
+
+sr.reveal('.homeSocial, .aboutData, .projectContainer', {origin: 'left'})
 sr.reveal('.aboutImg, .skillsContainer', {origin: 'right'})
 
 
