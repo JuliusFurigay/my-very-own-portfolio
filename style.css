@@ -641,6 +641,7 @@ img{
         font-size: 1.5rem;
     }
     .aboutContainer{
+        margin-top: 10rem;
         grid-template-columns: 600px 500px;
         align-items: center;
         column-gap: 10rem;
@@ -696,7 +697,7 @@ img{
     }
 
     .skills{
-        margin: 3rem;
+        margin-top: 10rem;
     }
     .education{
         margin: 3rem;
@@ -705,7 +706,7 @@ img{
         margin: 3rem;
     }
     .projects{
-        margin: 3rem;
+        margin-top: 10rem;
     }
     .contacts{
         margin: 3rem;
