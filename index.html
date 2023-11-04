@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel = "icon" href ="pfpCopy.png" type = "image/x-icon"> 
+    <link rel = "icon" href ="icon.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper-bundle.min.css">
     <title>My portfolio</title>
@@ -320,9 +320,9 @@
                     <div class="projectContent">
                         <h3 class="projectSubtitle">Website</h3>
                         <h2 class="projectTitle">Food Webapp</h2>
-                        <p class="projectDescription">Project website that helps the small
-                            business owners to sell thier products online, it's just like
-                            a lazada or shopee but insted of items they sell food.
+                        <p class="projectDescription">Our project website that helps the small 
+                            business owners to sell thier products online, it's just like a 
+                            lazada or shopee but insted of items they sell food.
                         </p>
                     </div>
                     <div class="projectBtn">
@@ -334,17 +334,15 @@
 
                 <article class="projectCard">
                     <div class="projectImage">
-                        <img src="plain.webp" alt="" class="projectImg">
+                        <img src="phproject.png" alt="" class="projectImg">
                     </div>
                     <div class="projectContent">
-                        <h3 class="projectSubtitle">lorem</h3>
-                        <h2 class="projectTitle">ipsum</h2>
-                        <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Magnam illo accusantium ex distinctio sunt vel, voluptas aliquam dignissimos possimus 
-                            culpa aliquid a tempore id praesentium.</p>
+                        <h3 class="projectSubtitle">Website</h3>
+                        <h2 class="projectTitle">Php project</h2>
+                        <p class="projectDescription">my php project when I was 2nd year in St. Clare College </p>
                     </div>
                     <div class="projectBtn">
-                        <a href="" class="projectLink">
+                        <a href="https://furigayjulius.000webhostapp.com/index.php/" class="projectLink">
                             <i class="ri-pages-line"></i> View
                         </a>
                     </div>
@@ -459,5 +457,21 @@
     <script src="scrollreveal_master_dist_scrollreveal.min.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 700, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
 </body>
 </html>
